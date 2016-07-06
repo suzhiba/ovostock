@@ -8,33 +8,17 @@ test_ovostock
 Tests for `ovostock` module.
 """
 
-import pytest
-
-from contextlib import contextmanager
-from click.testing import CliRunner
-
-from ovostock import ovostock
-from ovostock import cli
+import unittest2 as unittest
 
 
-class TestOvostock(object):
-
+class TestOvostock(unittest.TestCase):
     @classmethod
     def setup_class(cls):
         pass
 
-    def test_something(self):
-        pass
-    def test_command_line_interface(self):
-        runner = CliRunner()
-        result = runner.invoke(cli.main)
-        assert result.exit_code == 0
-        assert 'ovostock.cli.main' in result.output
-        help_result = runner.invoke(cli.main, ['--help'])
-        assert help_result.exit_code == 0
-        assert '--help  Show this message and exit.' in help_result.output
+    def test_hello_world(self):
+        assert True
 
     @classmethod
     def teardown_class(cls):
         pass
-
