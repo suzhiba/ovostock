@@ -10,5 +10,8 @@
 # Testing
 1. Execute `python setup.py test`.
 
+# Documentation
+1. Execute `python setup.py build_sphinx`.
+
 # URLs
 - https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/
