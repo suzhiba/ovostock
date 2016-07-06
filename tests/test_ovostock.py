@@ -17,7 +17,7 @@ class TestOvostock(unittest.TestCase):
         pass
 
     def test_hello_world(self):
-        assert True
+        assert(True)
 
     @classmethod
     def teardown_class(cls):
